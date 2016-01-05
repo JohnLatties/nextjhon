@@ -1,12 +1,12 @@
 {
   "name": "next jhon",
   "version": "0.1.0",
-  "homepage": "https://github.com/iissnan/hexo-theme-next",
+  "homepage": "https://github.com/JohnLatties/nextjohn",
   "authors": [
     "jhon latties <jon.latties@gmail.com>"
   ],
-  "description": "High quality and elegant theme for Hexo",
-  "repository": "https://github.com/iissnan/hexo-theme-next",
+  "description": "theme for Hexo",
+  "repository": "https://github.com/JohnLatties/nextjohn",
   "keywords": [
     "hexo",
     "notes",

@@ -1,5 +1,4 @@
-# TRNexT
-based on NexT.
-对NexT.Mist的修改，仿照了推酷文章排列方式。
+# Next John
+theme for [Hexo](https://hexo.io);
 
-[demo](http://turuir.cn)
+[based on NexT](http://turuir.cn)
