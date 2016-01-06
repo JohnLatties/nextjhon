@@ -53,12 +53,6 @@
               {{ date(post.date, config.date_format) }}
             </time>
           </span>
-          <span class="post-time">
-            | 修改于
-            <time itemprop="dateCreated" datetime="{{ moment(post.updated).format() }}" content="{{ date(post.updated, config.date_format) }}">
-              {{ date(post.updated, config.date_format) }}
-            </time>
-          </span>
 
           {% if post.categories and post.categories.length %}
             <span class="post-category" >
@@ -131,35 +125,29 @@
       {% if is_index %}
         {% if post.description %}
           <span itemprop="description">{{ post.description }}</span>
-          <!--
           <div class="post-more-link text-center">
             <a class="btn" href="{{ url_for(post.path) }}">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
-          -->
         {% elif post.excerpt  %}
           {{ post.excerpt }}
-          <!--
           <div class="post-more-link text-center">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
-          -->
         {% elif theme.auto_excerpt.enable %}
           <span itemprop="articleBody">
             {% set content = post.content | striptags %}
             {{ content.substring(0, theme.auto_excerpt.length) }}
             {% if content.length > theme.auto_excerpt.length %}...{% endif %}
           </span>
-          <!--
           <div class="post-more-link text-center">
             <a class="btn" href="{{ url_for(post.path) }}{% if theme.scroll_to_more %}#more{% endif %}" rel="contents">
               {{ __('post.read_more') }} &raquo;
             </a>
           </div>
-          -->
         {% else %}
           <span itemprop="articleBody">
             {% if post.type === 'picture' %}
