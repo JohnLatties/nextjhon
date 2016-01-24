@@ -29,6 +29,6 @@ function displaySidebar () {
   $('.sidebar-toggle').trigger('click');
 }
 
-function isMist () {
-  return CONFIG.scheme === 'Mist';
+function isNextJohn () {
+  return CONFIG.scheme === 'NextJohn';
 }

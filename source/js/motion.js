@@ -195,10 +195,10 @@ $(document).ready(function () {
         o: {duration: 200}
       });
 
-      isMist() && hasElement([$logoLineTop, $logoLineBottom]) &&
+      isNextJohn() && hasElement([$logoLineTop, $logoLineBottom]) &&
       sequence.push(
-        getMistLineSettings($logoLineTop, "100%"),
-        getMistLineSettings($logoLineBottom, "-100%")
+        getNextJohnLineSettings($logoLineTop, "100%"),
+        getNextJohnLineSettings($logoLineBottom, "-100%")
       );
 
       hasElement($title) && sequence.push({
@@ -223,7 +223,7 @@ $(document).ready(function () {
       }
 
 
-      function getMistLineSettings (element, translateX) {
+      function getNextJohnLineSettings (element, translateX) {
         return {
           e: $(element),
           p: {translateX: translateX},
