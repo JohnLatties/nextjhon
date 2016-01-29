@@ -3,6 +3,21 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
+  <style type="text/css">
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    height: 70px;
+    transition: all 0.4s ease;
+    }
+
+    .header-inner-fix{
+      padding-top: 10px;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ config.language }}">
@@ -61,6 +76,7 @@
   {% block script_extra %}{% endblock %}
 
   <script type="text/javascript" src="{{ url_for(theme.js) }}/bootstrap.js"></script>
+  <script type="text/javascript" src="{{ url_for(theme.js) }}/nextheader.js"></script>
 
   {% include '_scripts/tinysou.swig' %}
   {% include '_scripts/mathjax.swig' %}
